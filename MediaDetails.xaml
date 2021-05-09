@@ -1,0 +1,48 @@
+﻿<Page x:Class="FinalProject.MediaDetails"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1400"
+      Title="ISI Library" FontSize="22"
+        Background="#2c2c54" Foreground="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Update Media Details" Grid.ColumnSpan="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" FontFamily="Times New Roman" FontStyle="Italic" FontWeight="Heavy" TextDecorations="Underline" />
+
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Media Title:" Grid.ColumnSpan="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="38" FontFamily="Times New Roman" FontWeight="Heavy" />
+
+        <TextBox Name="mediaTitle" Grid.Row="2" Grid.Column="2" Width="500" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="38" FontFamily="Times New Roman" FontWeight="ExtraBold" />
+
+        <TextBlock Grid.Row="4" Grid.Column="1" Text="Media Type:" Grid.ColumnSpan="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="38" FontFamily="Times New Roman" FontWeight="Heavy" />
+
+        <ComboBox Name="mediaTypeComboBox" Grid.Row="4" Grid.Column="2" Width="500" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="38" FontFamily="Times New Roman" FontWeight="ExtraBold" />
+
+        <Button x:Name="submitBtn" Content="Update" Grid.Column="1" Grid.Row="6" Grid.RowSpan="1" Margin="20, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="submitBtn_Click"/>
+
+        <Button x:Name="backBtn" Content="Back" Grid.Column="3" Grid.Row="6" Grid.RowSpan="1" Margin="20, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="backBtn_Click"/>
+    </Grid>
+</Page>

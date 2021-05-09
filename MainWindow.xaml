@@ -1,0 +1,68 @@
+﻿<Window x:Class="FinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="ISI Library" Height="800" Width="1400" FontSize="22"
+        Background="#2c2c54" Foreground="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="ISI Library Management" Grid.ColumnSpan="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" FontFamily="Times New Roman" FontStyle="Italic" FontWeight="Heavy" TextDecorations="Underline" />
+
+        <DataGrid Name="MediaList" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" Grid.RowSpan="7" HorizontalScrollBarVisibility="Disabled" AutoGenerateColumns="False" Margin="25,0,0,0" Foreground="#2c2c54" FontWeight="DemiBold" FontStyle="Italic" HorizontalGridLinesBrush="#FF474787" VerticalGridLinesBrush="#FF474787">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Serial No" Binding="{Binding SerialNo}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Media Type"  Binding="{Binding MediaType}" Width="auto" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Media Title"  Binding="{Binding MediaTitle}" Width="auto" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Is Borrowed?" Binding="{Binding IsBorrowed}" Width="auto" IsReadOnly="True" />
+                <DataGridTextColumn Header="Borrower's Name" Width="*" Binding="{Binding CurrentBorrower}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Name="MemberList" Grid.Column="7" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="7" HorizontalScrollBarVisibility="Disabled" AutoGenerateColumns="False" Margin="25,0,25,0" Foreground="#2c2c54" FontWeight="DemiBold" FontStyle="Italic" HorizontalGridLinesBrush="#FF474787" VerticalGridLinesBrush="#FF474787">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Member ID" Binding="{Binding MemberID}" IsReadOnly="True" Width="auto"/>
+                <DataGridTextColumn Header="Member Name" Binding="{Binding MemberName}" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="BorrowBtn" Content="Borrow Media" Grid.Column="0" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="20, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="BorrowBtn_Click"/>
+
+        <Button x:Name="ReturnBtn" Content="Return Media" Grid.Column="2" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="-100, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="ReturnBtn_Click" />
+
+        <Button x:Name="modifyBtn" Content="Modify Media" Grid.Column="4" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="-220, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="modifyBtn_Click" />
+
+        <Button Name="modifyMember" Content="Modify Member" Grid.Column="6" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="-340, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="modifyMember_Click" />
+
+        <Button x:Name="displayMedia" Content="Display Media" Grid.Column="8" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="-460, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="displayMedia_Click" />
+
+        <Button x:Name="displayMember" Content="Display Member" Grid.Column="10" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="-170, 25, 10, 5" Width="200" FontWeight="Bold" FontStyle="Italic" FontSize="25" Background="#474787" Foreground="White" Click="displayMember_Click" />
+    </Grid>
+</Window>
