@@ -9,12 +9,12 @@ for college project <br /><br />
 
 _Home_<br />
 
-![Homepage](https://github.com/sahilachhava/SNRestaurant/blob/main/screenshots/home.png)<br />
+![Homepage](https://github.com/sahilachhava/LibraryManagement/blob/main/screenshots/home.png)<br />
 
 _Update Media_<br />
 
-![Homepage](https://github.com/sahilachhava/SNRestaurant/blob/main/screenshots/media.png)<br />
+![Homepage](https://github.com/sahilachhava/LibraryManagement/blob/main/screenshots/media.png)<br />
 
 _Update member_<br />
 
-![Homepage](https://github.com/sahilachhava/SNRestaurant/blob/main/screenshots/member.png)<br />
+![Homepage](https://github.com/sahilachhava/LibraryManagement/blob/main/screenshots/member.png)<br />
