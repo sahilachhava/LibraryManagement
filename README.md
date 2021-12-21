@@ -1,9 +1,8 @@
 # LibraryManagement
 
 **Developed in 2021** <br />
-for college project <br /><br />
 
-*This library management system was created for college project, it is purely based on C#*<br />
+*The library management system was created for learning purpose, it was developed in C#*<br />
 
 **Screenshots**
 
